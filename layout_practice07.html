@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .logo {
+                position: relative;
+                right: 210px;
+            }
+            .mainlogo {
+                position: relative;
+                right: 40px;
+            }
+            nav {
+                width: 1150px;
+                height: 30px;
+                background-color: rgb(90, 168, 70);
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                width: 24%;
+                display: inline-block;
+                line-height: 30px;
+                text-align: center;
+            }
+            .content {
+                display: flex;
+            }
+            main {
+                text-align: center;
+                column-count: 2;
+            }
+            main img {
+                width: 300px;
+                height: 250px;
+                display: inline-block;
+                padding: 10px 10px 0px 10px;
+            }
+            .raside img{
+                display: flex;
+            }
+            .login-info {
+                display: inline-block;
+                margin-right: 10px;
+            }
+            .login-info input {
+                width: 200px;
+                height: 25px;
+            }
+            .login-button {
+                position: relative;
+                display: inline-block;
+                bottom: 15px;
+            }
+            .login-bottom {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .login-button input{
+                width: 60px;
+                height: 50px;
+            }
+            .login-bottom a {
+                text-decoration: none;
+                padding: 0px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <img src="/images/img/logo.jpg" class="logo">
+                <img src="/images/img/mainlogo.jpg" class="mainlogo">
+            </header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Board</a>
+                <a href="#">Contact</a>
+            </nav>
+            <section class="content">
+                <div class="laside">
+                    <img src="/images/img/left_img.jpg">
+                </div>
+                <main>
+                    <div class="mainblock1">
+                        <img src="/images/img/main_img1.jpg"><br>
+                        나무를 심는 사람들<br><br>
+                    </div>
+                    <div class="mainblock2">
+                        <img src="/images/img/main_img2.jpg"><br>
+                        아이들에게 녹색미래를..<br><br>
+                    </div>
+                    <div class="mainblock3">
+                        <img src="/images/img/main_img3.jpg"><br>
+                        설악산을 살리는 길<br><br>
+                    </div>
+                    <div class="mainblock4">
+                        <img src="/images/img/main_img4.jpg"><br>
+                        사라지는 북극곰들<br><br>
+                    </div>
+                </main>
+                <div class="raside">
+                    <div class="login">
+                        <form action="" method="GET">
+                            <div class="login-info">
+                                <input type="text" name="id" autofocus placeholder="ID를 입력하세요."><br>
+                                <input type="password" name="pw"placeholder="PW를 입력하세요.">
+                            </div>
+                            <div class="login-button">
+                                <input type="submit" value="로그인">
+                            </div>
+                            <div class="login-bottom">
+                                <a href="">회원가입</a>
+                                <a href="">ID/PW 찾기</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <img src="/images/img/right_img.jpg">
+                        <img src="/images/img/me_chat.jpg">
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <img src="/images/img/footer.JPG">
+            </footer>
+        </div>
+    </body>
+</html>

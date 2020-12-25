@@ -1,0 +1,52 @@
+/* 주석 */
+* {color: yellowgreen;}
+/* p {color: blue;}
+#d1 {background-color: hotpink}
+div {background-color: gray;}
+header, footer {background-color: gold;}
+.pclass1 {background-color: indigo;}
+div .pclass1 {background-color: lightseagreen;}
+[href] {color: orange;}
+[href^="http"] {color: orangered;}
+[target="_blank"] {color: palegreen} */
+
+/*후손 */
+/* div pre {color: royalblue;} */
+/* 자손 */
+div>pre {color: saddlebrown;}
+div>pre>pre {color: orange;}
+
+h1+pre {background-color: teal;}
+h1~pre {color: blueviolet;}
+
+/* 반응 선택자 */
+a:hover {background-color: blue;}
+a:active {color: white;}
+
+/* 상태 선택자 */
+input[type="checkbox"]:checked {
+    width: 20px;
+    height: 20px;
+}
+input:focus {
+    background-color: purple;
+}
+option:disabled {
+    background-color: gray;
+}
+
+/* 일반 구조 선택자 */
+#d4 p:first-child {background-color: red; color: white;}
+#d4 p:last-child {background-color: orange; color: white;}
+#d4 p:nth-child(3) {background-color: blue; color: white;}
+
+/* 형태 구조 선택자 */
+#d5 p:first-of-type {background-color: red; color: white;}
+#d5 p:last-of-type {background-color: orange; color: white;}
+#d5 p:nth-of-type(3) {background-color: blue; color: white;}
+
+/* 문자 선택자 */
+#d6 p::first-letter {font-size: 2em;}
+#d6 p::first-line {background-color: yellowgreen;}
+#d6 p::after {content: "#### 태그 뒤에 추가된 내용####";}
+#d6 p::selection {background-color: red; color: white;}

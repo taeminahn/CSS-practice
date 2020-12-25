@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>반응형웹</title>
+        <meta name="viewport" content="width=device-width"> 
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                margin: 10px;
+                width: 100%;
+            }
+            nav ul{
+                background-color: #5c5c5c;
+                height: 30px;
+                list-style: none;
+                text-align: center;
+                line-height: 30px;
+            }
+            nav ul li {
+                display: inline-block;
+                width: 20%;
+            }
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+            }
+            section {
+                clear: both;
+                padding: 10px;
+                /* height: 500px; */
+            }
+            section img {
+                width: 100%;
+                max-width: 600px;
+            }
+            footer {
+                background-color: lightgray;
+                text-align: center;
+                height: 30px;
+                line-height: 30px;
+            }
+            table, th, td{
+                border: 1px solid black;
+            }
+            th {
+                width: 100px;
+            }
+            td {
+                height: 50px;
+            }
+            .tablearea {
+                overflow: auto;
+            }
+            @media (max-width: 767px) {
+                nav ul{
+                background-color: #5c5c5c;
+                height: 90px;
+                list-style: none;
+                text-align: center;
+                line-height: 30px;
+                }
+                nav ul li {
+                    display: block;
+                    width: 20%;
+                } 
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>반응형 웹 테스트</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h3>반응형 웹 테스트 페이지입니다.</h3>
+            <img src="sample/image/tower1.PNG">
+            <div class="tablearea">
+                <table>
+                    <tr>
+                        <th>제목1</th>
+                        <th>제목2</th>
+                        <th>제목3</th>
+                    </tr>
+                    <tr>
+                        <td>내용1fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용2fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용3fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                    </tr>
+                    <tr>
+                        <td>내용1fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용2fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용3fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                    </tr>
+                    <tr>
+                        <td>내용1fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용2fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용3fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                    </tr>
+                    <tr>
+                        <td>내용1fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용2fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                        <td>내용3fasdasfasdasfsdfadsfasdfasdfasdfasdfasdfasdfasdfasd</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer>
+            <p>posted by: yum</p>
+        </footer>
+    </body>
+</html>

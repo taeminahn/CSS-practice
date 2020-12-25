@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>사진갤러리</title>
+        <style>
+            /* 썸네일 이미지를 올려놓을 갤러리 스타일 */
+            #gallery {
+                border: 10px solid #1d0c16;
+                height: 300px;
+                width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+                overflow: visible;
+                background-color: #272229;
+                box-shadow: #492323 10px 10px 20px;
+            }
+            /* 썸네일 목록 전체 스타일 */
+            #gallery ul {
+                margin-left: -30px;/* 갤러리 가운데 콘텐츠가 올 수 있도록 */
+            }
+            /* 썸네일 각 항목에 대한 스타일 */
+            #gallery ul li {
+                list-style: none;
+                display: inline-table;
+                padding: 10px;
+            }
+            /* 작은 이미지(.small)에 대한 스타일 */
+            #gallery ul li .small {
+                width: 120px;
+                height: 90px;
+                box-shadow: #fff 1px 1px 3px;
+            }
+            /* 큰 이미지(.pic)에 대한 스타일 */
+            #gallery ul li .pic {
+                width: 320px;
+                height: 240px;
+                opacity: 0; /* 페이드 아웃 효과 */
+                visibility: hidden; /* 처음에는 보이지 않게 */
+                position: absolute;
+                margin-top: 10px;
+                margin-left: -20px;
+                border: 1px solid black;
+                box-shadow: #977d87 2px 2px 10px;
+                transition: all 0.6s ease-in-out;
+            }
+            /* 마우스 오버 효과 주기 */
+            #gallery ul li .small:hover {
+                cursor: pointer;
+            }
+            /* 썸네일 이미지위로 마우스 오버했을때 큰 이미지 스타일 */
+            #gallery ul li:hover .pic {
+                width: 320px;
+                height: 240px;
+                opacity: 1;
+                visibility: visible;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>사진 갤러리 만들기</h2>
+        <hr>
+        <div id="gallery">
+            <ul>
+                <li>
+                    <img src="sample/image/flower1.PNG" class="small">
+                    <img src="sample/image/flower1.PNG" class="pic">
+                </li>
+                <li>
+                    <img src="sample/image/flower2.PNG" class="small">
+                    <img src="sample/image/flower2.PNG" class="pic">
+                </li>
+                <li>
+                    <img src="sample/image/flower3.PNG" class="small">
+                    <img src="sample/image/flower3.PNG" class="pic">
+                </li>
+                <li>
+                    <img src="sample/image/flower4.PNG" class="small">
+                    <img src="sample/image/flower4.PNG" class="pic">
+                </li>
+                <li>
+                    <img src="sample/image/flower5.PNG" class="small">
+                    <img src="sample/image/flower5.PNG" class="pic">
+                </li>
+                <li>
+                    <img src="sample/image/forest1.PNG" class="small">
+                    <img src="sample/image/forest1.PNG" class="pic">
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!doctype html>
+<html lang="ko">
+
+<head>
+    <title>레이아웃스타일3</title>
+    <style>
+        * {margin: 0px; padding: 0px;}
+        .test {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+        }
+        .test1 {
+            padding: 100px;
+        }
+        .test2 {
+            padding-top: 50px;
+            padding-left: 100px;
+        }
+        .test3 {
+            margin: 50px;
+        }
+        .test4 {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        /* 한번에 선언하는 방법(padding/margin 모두 동일)
+            margin : 20px           - 모든 방향으로 20px
+            margin : 20px 10px      - 상하20px, 좌우10px
+            margin : 20px 10px 5px  - 상20px, 좌우10px, 하5px
+            margin : 20px 15px 10px 5px - 상20px, 우15px, 하10px, 좌5px 
+        */
+
+    </style>
+</head>
+
+<body>
+    <h1>여백 관련 속성</h1>
+    <h4>기준 div</h4>
+    <div class="test">콘텐츠영역</div>
+    <h3>padding</h3>
+    <h4>테두리와 컨텐츠 영역 사이의 거리를 조절하는 속성</h4>
+    <p>padding:100px;</p>
+    <div class="test test1">콘텐츠영역</div>
+    <p>padding-top:50px; padding-left:100px;</p>
+    <div class="test test2">콘텐츠영역</div>
+    <h3>margin</h3>
+    <h4>box레벨이나 inline레벨의 요소들간의 간격을 조절하는 속성</h4>
+    <p>margin:50px;</p>
+    <div class="test test3">콘텐츠영역</div>
+    <p>margin-top:50px; margin-left:50px;</p>
+    <div class="test test4">콘텐츠영역</div>
+
+</body>
+
+</html>

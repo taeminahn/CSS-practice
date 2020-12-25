@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>폴라로이드사진</title>
+        <style>
+            .polaroid {
+                width: 300px;
+                border: 1px solid #bfbfbf;
+                padding: 10px 10px 20px 10px;
+                background-color: white;
+                box-shadow: 2px 2px 3px rgb(135, 139, 133,0.4);
+                position: relative;
+                left: 100px;
+                top: 50px;
+            }
+            .polaroid > img {
+                width: 300px;
+                height: 180px;
+            }
+            .caption {
+                text-align: center;
+                font-family: "바탕";
+                font-weight: 600;
+                font-size: 16px;
+                color: #060;
+            }
+            .rotate {
+                transform: rotate(5deg);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>폴라로이드 느낌 사진 만들기</h2>
+        <hr>
+        <div class="polaroid rotate">
+            <img src="sample/image/river1.PNG">
+            <p class="caption">여름이 깊어가고 있다...</p>
+        </div>
+    </body>
+</html>
